@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      
+      <!-- Running the below class will run both UI and API test and return the result -->
+      <class name="com.testvagrant.WeathreComparator.Compare.CompareWeatherInfo"/>
+      
+      <!-- If individually UI and API are to be tested, the below classes shall be uncommented -->    	
+      <!-- <class name="com.testvagrant.WeatherComparator.UI.ExtractTemperatureFromUITest"/>
+      <class name="com.testvagrant.WeatherComparator.API.ExtractTemperatureFromAPITest"/> -->
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
